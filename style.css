@@ -1,0 +1,254 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+/* galeri css */
+body {
+  background-color: #000;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* main-nav */
+
+#main-nav {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#main-nav .logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+.mode-and-profile {
+  display: flex;
+}
+.mode-and-profile .mode-btn {
+  color: #fff;
+  border: 1px solid #686868;
+  border-radius: 50%;
+  padding: 7px 8px;
+  cursor: pointer;
+}
+.mode-btn img {
+  width: 20px;
+  height: 20px;
+}
+.mode-and-profile .mode-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.mode-and-profile .profile {
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.mode-and-profile .profile img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  padding-left: 5px;
+  color: #808080;
+}
+.search {
+  width: 45%;
+  display: inline-flex;
+  border: 1px solid #686868;
+  border-radius: 25px;
+  overflow: hidden;
+}
+form button {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #686868;
+  cursor: pointer;
+}
+form input {
+  width: 100%;
+  padding: 0 20px 0 0;
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+}
+.mobile-search {
+  display: none !important;
+  width: 37px;
+  border: 1px solid #686868;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.mobile-search button {
+  padding: 0px 10px;
+}
+.mobile-search:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* categories */
+
+.categories {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.categories ul {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.categories ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 8px;
+}
+.categories ul li a:hover {
+  padding: 8px;
+  background-color: #ffffff2b;
+  transition: all 0.3s ease;
+}
+.categories ul li a.active {
+  padding: 8px;
+  background-color: #ffffff2b;
+}
+.list-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.list-form button img {
+  opacity: 0.5;
+  color: #fff;
+  width: 20px;
+  cursor: pointer;
+}
+.list-form button img:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/* main */
+
+.files,
+.history {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.file {
+  width: 23%;
+  position: relative;
+  cursor: pointer;
+}
+.file img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.file img:hover,
+.history .history-item img:hover {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.history .history-item {
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.history .history-item img {
+  width: 100%;
+  height: 266px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.history .history-item .history-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000a6;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+}
+.title {
+  font-size: 16px;
+  color: #fff;
+}
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b4b4b4;
+}
+
+/* footer */
+
+footer {
+  margin-top: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #686868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  font-size: 14px;
+  color: #b4b4b4;
+}
