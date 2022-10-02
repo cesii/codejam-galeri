@@ -2,4 +2,4 @@
 
 Demo : https://cesi-galeri.netlify.app
 
-<img src='images/galeri-demo.png' alt='Galeri' style="width:10%"/>
+<img src='galeri-demo.png' alt='Galeri' style="width:100%"/>
